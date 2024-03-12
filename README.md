@@ -59,7 +59,7 @@ Die Liste kann durch zukünftige Updates erweitert werden.
 Wenn Sie zur Entwicklung der PanniniSammler App beitragen möchten, folgen Sie bitte den Anweisungen im `CONTRIBUTING.md`-Dokument.
 
 ## 9. Mitwirkende
-Dank an die Mitwirkenden, die zur Entwicklung und Verbesserung der PanniniSammler App beigetragen haben. Insbesondere @IsaKron und @BreffJaun die mich in jeglicher situation unterstützt haben und mir das coden beigebracht haben, Danke dafür!
+Dank an die Mitwirkenden, die zur Entwicklung und Verbesserung der PanniniSammler App beigetragen haben. Insbesondere @IsaKron und @BreffJaun die mich in jeglicher situation unterstützt haben und mir das coden beigebracht haben, Danke dafür! Und natürlich auch die Jungs aus dem BOR1 Johan, Michael, Michel und Mohammed, die meine Art und Weise zu coden respektieren und sogar Memes daraus erstellen, Jungs ihr seid spitzenklasse!
 
 ## 10. Lizenz
 Die PanniniSammler App steht unter der MIT-Lizenz. Weitere Informationen finden Sie im `LICENSE`-Dokument.
