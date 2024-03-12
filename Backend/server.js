@@ -12,10 +12,11 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const MONGO_DB_URI = process.env.MONGO_DB_URI || "mongodb://localhost:27017";
 
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static())
 app.use(cors());
-
 // <------------- ROUTES / ENDPOINTS ------------->
 // <------------- hier einfügen ------------->
 

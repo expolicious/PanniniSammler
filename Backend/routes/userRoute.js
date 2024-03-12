@@ -1,5 +1,5 @@
 import express from 'express';
-import { getUsers, addUser, updateUser, loginUser } from '../controller/userController.js';
+import { getUsers, regUser, updateUser, loginUser } from '../controller/userController.js';
 import { getAlbums, addSticker, addAlbum, deleteAlbum } from '../controller/albumController.js';
 
 const router = express.Router();
@@ -14,7 +14,7 @@ router
 
 router
   .route("/registration")
-  .post(addUser)    //user registration
+  .post(regUser)    //user registration
 
 router
   .route("/login")

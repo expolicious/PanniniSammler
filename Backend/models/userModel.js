@@ -8,7 +8,8 @@ const userSchema = new Schema(
     birthdate: { type: Date, required: false },
     email: { type: String, required: true, unique: true},
     password: { type:String, required: true},
-    albums: [{ type: Schema.Types.ObjectId, ref: 'Album'}]
+    albums: [{ type: Schema.Types.ObjectId, ref: 'Album'}],
+    stickers: [{ type: Schema.Types.ObjectId, ref: 'Sticker'}],
   },
   { versionKey: false }
 );
