@@ -101,6 +101,8 @@ footer ul{
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);     
   transition: transform var(--transition);
 }
+
+
       
 .cont-checkbox:first-of-type {
   margin-bottom: 0.75rem;
@@ -111,7 +113,7 @@ footer ul{
   transform: scale(0.9);
 }
       
-.cont-checkbox + input {
+input + .cont-checkbox {
   display: none;
 }
       

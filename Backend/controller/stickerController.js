@@ -1,4 +1,5 @@
 import Sticker from "../models/stickerModel.js";
+import User from  "../models/userModel.js"
 
 export const getStickers = async (req, res, next) => {
   try {
@@ -22,5 +23,20 @@ export const stickerToDB = async (req, res, next) => {
     const error = new Error("Creating sticker failed.");
     error.status = 500;
     next(err);
+  }
+}
+
+export const stickerToUser = async (req, res, next) => {
+  try{
+    const userId = req.params;
+    const stickersId = req.body;
+
+    const newSticker = new Sticker({stickersId})
+    await User.updateOne(newSticker)
+    res.status(201).json({message: 'added Sticker to user succesfully'})
+  } catch (err){
+    const error = new Error('Sticker to user failed');
+    error.status = 500;
+    next(err)
   }
 }

@@ -12,15 +12,18 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const MONGO_DB_URI = process.env.MONGO_DB_URI || "mongodb://localhost:27017";
 
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static())
+app.use(express.static("../Frontend"))
+app.use(express.static(path.join(__dirname, "../client/build")));
+app.get('*',(req,res)=>{
+  res.sendFile(path.join(__dirname + "/../client/build/index.html"));
+})
 app.use(cors());
 // <------------- ROUTES / ENDPOINTS ------------->
 // <------------- hier einfügen ------------->
 
-app.use("/user", userRoutes);
+app.use( userRoutes);
 app.use("/album", albumRoutes)
 
 app.use("*", invalidRoute);
